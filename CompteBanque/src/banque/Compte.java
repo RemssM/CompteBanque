@@ -2,6 +2,10 @@ package banque;
 
 public class Compte {
 	private float solde = 0;
+	
+	public void Main() {
+		
+	}
 
 	public void deposerArgent(float pArgent) {
 		solde += pArgent;
@@ -25,5 +29,5 @@ public class Compte {
 		return  "Solde : "+solde ; 
 	}
 
-	}
+}
 
