@@ -3,8 +3,19 @@ package banque;
 public class Compte {
 	private float solde = 0;
 	
-	public void Main() {
+	public static void main(String[] args) {
+		Compte A = new Compte();
+		Compte B = new Compte();
 		
+		A.deposerArgent(100000);
+		
+		A.deposerArgent(5);
+		A.toString();
+		A.virer(5000, B);
+		B.retirerArgent(2);
+		
+		System.out.println(A);
+		System.out.println(B);
 	}
 
 	public void deposerArgent(float pArgent) {
@@ -18,10 +29,9 @@ public class Compte {
 	}
 
 	public float virer(int pArgent, Compte compteDestination) {
-		float res = pArgent - solde;
 		solde -= pArgent;
-		compteDestination.deposerArgent(res);
-		return res;
+		compteDestination.deposerArgent(pArgent);
+		return pArgent;
 	}
 
 
