@@ -8,7 +8,7 @@ public class Compte {
 	}
 
 	public float retirerArgent(float pArgent) {
-		
+
 		solde -= pArgent;
 		return pArgent;
 	}
@@ -20,5 +20,10 @@ public class Compte {
 		return res;
 	}
 
-}
+
+	@Override public String toString() {
+		return  "Solde : "+solde ; 
+	}
+
+	}
 
