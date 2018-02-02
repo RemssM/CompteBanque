@@ -1,7 +1,7 @@
 package banque;
 
 public class Compte {
-	private float solde = 0;
+	protected float solde = 0;
 	
 	public static void main(String[] args) {
 		Compte A = new Compte();
