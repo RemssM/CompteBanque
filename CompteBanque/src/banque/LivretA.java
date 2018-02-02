@@ -13,7 +13,6 @@ public class LivretA extends Compte {
 	
 	public float virer(float pArgent, Compte compteDestination) {
 		pArgent = retirerArgent(pArgent);
-		solde -= pArgent;
 		compteDestination.deposerArgent(pArgent);
 		return pArgent;
 	}

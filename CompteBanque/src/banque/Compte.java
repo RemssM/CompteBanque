@@ -4,14 +4,14 @@ public class Compte {
 	protected float solde = 0;
 	
 	public static void main(String[] args) {
-		Compte A = new Compte();
-		Compte B = new Compte();
+		LivretA A = new LivretA();
+		LivretA B = new LivretA();
 		
-		A.deposerArgent(100000);
+		A.deposerArgent(5000);
 		
 		A.deposerArgent(5);
 		A.toString();
-		A.virer(5000, B);
+		A.virer(5005, B);
 		B.retirerArgent(2);
 		
 		System.out.println(A);
