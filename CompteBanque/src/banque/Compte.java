@@ -28,7 +28,7 @@ public class Compte {
 		return pArgent;
 	}
 
-	public float virer(int pArgent, Compte compteDestination) {
+	public float virer(float pArgent, Compte compteDestination) {
 		solde -= pArgent;
 		compteDestination.deposerArgent(pArgent);
 		return pArgent;
