@@ -8,9 +8,9 @@ public class Compte {
 	}
 
 	public float retirerArgent(float pArgent) {
-		float res = pArgent - solde;
+		
 		solde -= pArgent;
-		return res;
+		return pArgent;
 	}
 
 	public float virer(int pArgent, Compte compteDestination) {
